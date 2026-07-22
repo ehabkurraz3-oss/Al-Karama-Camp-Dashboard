@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منظومة إدارة مخيم الكرامة</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <header>
+        <img src="image/imgcamp.jpg" alt="الشعار">
+        <nav class="navbar">
+            <a href="#stats">الإحصائيات</a>
+            <a href="#register">تسجيل عائلة</a>
+            <a href="#table">المساعدات</a>
+            <a href="#appeals">نداءات عاجلة</a>
+            <a href="#contact">تواصل معنا</a>
+        </nav>
+        <a href="#appeals" class="alert-btn">نداء استغاثة</a>
+    </header>
+
+    <main class="main-content">
+      <section id="stats">
+         <h2 class="section-title">شاشة الاحصائيات الفورية بالمخيم</h2>
+         <div class="stats-container">
+             <div class="stats-card">
+                 <h3>اجمالي العائلات النازحة</h3>
+                 <p class="num-blue">1,420</p>
+             </div>
+             <div class="stats-card">
+                 <h3>عدد الاطفال المقيمين</h3>
+                 <p class="num-blue">4,850</p>
+             </div>
+             <div class="stats-card">
+                 <h3>تغطية الطرود الموزعة</h3>
+                 <p class="num-blue">94%</p>
+             </div>
+             <div class="stats-card card-alert">
+                 <h3>الحالات الطبية العاجلة</h3>
+                 <p class="num-red">85</p>
+             </div>
+         </div>
+      </section>
+
+        <section id="register" class="section-box">
+            <h2 class="section-title">نموذج تسجيل العائلات النازحة</h2>
+            <form>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>اسم رب الأسرة</label>
+                        <input type="text" placeholder="احمد محمد محمود النابلسي" required>
+                    </div>
+                    <div class="form-group">
+                        <label>عدد الافراد</label>
+                        <input type="number" placeholder="6" min="1" required>
+                    </div>
+                </div> 
+                <div class="form-row">   
+                    <div class="form-group">
+                        <label>رقم الهوية/التعريف</label>
+                        <input type="text" placeholder="405128391" required>
+                    </div>
+                    <div class="form-group">
+                        <label>مكان النزوح السابق</label>
+                        <input type="text" placeholder="شمال غزة-جباليا" required>
+                    </div>
+                </div> 
+                <div class="form-row">
+                    <div class="form-group full-width">
+                        <label>الاحتياجات الطبية أو الخاصة الحالية</label>
+                        <select required>
+                            <option value="">-- اختر الحالة الحالية --</option>
+                            <option value="none">لا يوجد احتياجات خاصة</option>
+                            <option value="diabetes">مرضى سكري (بحاجة أنسولين)</option>
+                            <option value="infant">أطفال رضع (بحاجة حليب وحفاضات)</option>
+                            <option value="disability">إعاقة حركية أو جسدية</option>
+                        </select>
+                    </div>
+                </div>   
+                <button type="submit" class="btn-submit">تسجيل واضافة البيانات في قاعدة البيانات المحلية</button>
+            </form>
+        </section>
+
+
+        <section id="table" class="section-box">
+            <h2 class="section-title">جدول توزيع المساعدات</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>رقم القاطع</th>
+                            <th>اسم العائلة</th>
+                            <th>نوع المساعدة</th>
+                            <th>حالة الاستلام</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>قاطع أ-الخيمة 12</td>
+                            <td>عائلة محمد عبد الرحمن</td>
+                            <td>طرود غذائية + مياه عذبة </td>
+                            <td><span class="badge-done">تم التسليم</span></td>
+                        </tr>
+                        <tr>
+                            <td>قاطع ب-الخيمة 45</td>
+                            <td>عائلة خالد سعيد المصري</td>
+                            <td>مستلزمات إيواء واغطية شتوية</td>
+                            <td><span class="badge-done">تم التسليم</span></td>
+                        </tr>
+                        <tr>
+                            <td>قاطع ج-الخيمة 08</td>
+                            <td>عائلة يوسف صلاح الشريف</td>
+                            <td>حليب وحفاضات اطفال ومكملات</td>
+                            <td><span class="badge-pending">قيد الانتظار</span></td>
+                        </tr>
+                        <tr>
+                            <td>القاطع د - الخيمة 19</td>
+                            <td>عائلة مازن إبراهيم عوض</td>
+                            <td>طرود طبية وأدوية مزمنة</td>
+                            <td><span class="badge-done">تم التسليم</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+        </section>
+
+       <section id="appeals" class="section-box">
+            <h2 class="section-title">نظام إدارة نداءات الاستغاثة والنداءات العاجلة</h2>
+            <div class="appeals-grid">
+                
+                <article class="appeal-item">
+                    <span class="badge-red">عاجل جدا</span>
+                    <h4> انقطاع المياه بالكامل</h4>
+                    <p>توقف المضخة الرئيسية المغذية لخطوط القاطع ج بالمخيم وحاجة عاجلة لصهاريج بديلة لتلبية احتياجات النازحين اليومية.</p>
+                    <p class="location-text">القاطع ج - نقطة المياه رقم 2</p>
+                </article>
+
+                <article class="appeal-item">
+                    <span class="badge-blue">طلب طبي</span>
+                    <h4> نقص حقن الأنسولين</h4>
+                    <p>وجود أكثر من 18 حالة مسجلة ومصابة بمرض السكري بحاجة ماسة لجرعات الأنسولين ومداواة سريعة في النقطة الطبية المركزية.</p>
+                    <p class="location-text">النقطة الطبية المركزية</p>
+                </article>
+
+                <article class="appeal-item">
+                    <span class="badge-red">عاجل جدا</span>
+                    <h4> تأهيل خيام مهترئة</h4>
+                    <p>حاجة 12 عائلة نازحة لإعادة ترميم الخيام وتوزيع شوادر نايلون مقاومة للأمطار تحسباً لأي منخفض جوي قادم.</p>
+                    <p class="location-text">القاطع د -خيام الحواف الشرقية</p>
+                </article>
+
+            </div>
+        </section>
+
+       
+        <section id="contact" class="section-box">
+            <h2 class="section-title">صفحة التواصل والتنسيق الإنساني الشريك (Contact Us)</h2>
+            
+            <div class="contact-flex-layout">
+                
+                <div class="contact-image-side">
+                    <img src="image/imgfood.jpg" alt="صندوق المساعدات">
+                </div>
+
+                
+                <div class="contact-info-side">
+                    
+                    <div class="info-block">
+                        <h4>الموقع الجغرافي للمخيم</h4>
+                        <p>فلسطين، قطاع غزة، المحافظة الوسطى - مخيم الكرامة التمكيني</p>
+                    </div>
+                    
+                    <div class="info-block">
+                        <h4>البريد الإلكتروني للإدارة والتنسيق</h4>
+                        <p>karama.camp.mgmt@gmail.com</p>
+                    </div>
+                    
+                    <div class="info-block">
+                        <h4>التواصل الميداني المباشر</h4>
+                        <p>+970599123456 (متاح اتصال واتساب طوارئ)</p>
+                    </div>
+                </div>
+            </div>
+            <form class="contact-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>الاسم الكامل أو اسم المؤسسة الشريكة</label>
+                        <input type="text" placeholder="أدخل اسمك أو اسم المؤسسة" required>
+                    </div>
+                    <div class="form-group">
+                        <label>البريد الإلكتروني الخاص بك</label>
+                        <input type="email" placeholder="name@example.com" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>تفاصيل رسالة التنسيق أو الدعم الإنساني للمخيم</label>
+                    <textarea rows="4" placeholder="اكتب نص رسالتك هنا..." required></textarea>
+                </div>
+                <button type="submit" class="submit">رسالة للمؤسسة</button>
+            </form>
+        </section>
+    </main>
+
+
+    <footer>
+        <p>© 2026 منظومة إدارة مخيم الكرامة للنازحين</p>
+    </footer>
+
+</body>
+</html>
